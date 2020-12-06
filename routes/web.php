@@ -17,16 +17,22 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', 'AuthController@login');
-Route::get('/dashboard', 'AuthController@dashboard');
-Route::get('/daftarPenyakit', 'AuthController@daftarPenyakit');
-Route::get('/news', 'AuthController@news');
-Route::get('/keluhKesah', 'AuthController@keluhKesah');
-Route::get('/account', 'AuthController@account');
-Route::get('/edit', 'AuthController@editNews');
-Route::get('/penyakitpertanian', 'AuthController@penyakitPertanian');
-Route::get('/kebijakan', 'AuthController@kebijakan');
-Route::get('/informasiPupuk', 'AuthController@informasiPupuk');
-Route::get('/bantuanPertanian', 'AuthController@bantuanPertanian');
-Route::get('/isuPertanian', 'AuthController@isuPertanian');
-Route::get('/pengaduan', 'AuthController@pengaduan');
+Route::get('/', 'AuthController@login')->name('login');
+Route::post('/postlogin', 'AuthController@post');
+
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/dashboard', 'AuthController@dashboard')->middleware('auth');
+    Route::get('/daftarPenyakit', 'AuthController@daftarPenyakit');
+    Route::get('/news', 'AuthController@news');
+    Route::get('/keluhKesah', 'AuthController@keluhKesah');
+    Route::get('/account', 'AuthController@account');
+    Route::get('/edit', 'AuthController@editNews');
+    Route::get('/penyakitpertanian', 'AuthController@penyakitPertanian');
+    Route::get('/kebijakan', 'AuthController@kebijakan');
+    Route::get('/informasiPupuk', 'AuthController@informasiPupuk');
+    Route::get('/bantuanPertanian', 'AuthController@bantuanPertanian');
+    Route::get('/isuPertanian', 'AuthController@isuPertanian');
+    Route::get('/pengaduan', 'AuthController@pengaduan');
+    Route::get('/hakakses', 'AuthController@hakakses');
+});

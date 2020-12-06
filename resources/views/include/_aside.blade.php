@@ -64,13 +64,13 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/informasiUmum" class="nav-link">
+                            <a href="/kebijakan" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Kebijakan</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/kebijakan" class="nav-link">
+                            <a href="/informasiPupuk" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Informasi Pupuk</p>
                             </a>
@@ -108,6 +108,14 @@
                         <i class="nav-icon fa fa-user"></i>
                         <p>
                             My Account
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/hakakses" class="nav-link">
+                        <i class="nav-icon fa fa-user"></i>
+                        <p>
+                            Kelola Hak Akses
                         </p>
                     </a>
                 </li>

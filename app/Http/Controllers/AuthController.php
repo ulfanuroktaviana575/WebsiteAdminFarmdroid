@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth as FacadesAuth;
+
 
 class AuthController extends Controller
 {
@@ -11,6 +14,18 @@ class AuthController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function post(Request $request)
+    {
+        $credentials = $request->only('email', 'password');
+
+        if (Auth::attempt($credentials)) {
+            // Authentication passed...
+            return redirect('dashboard');
+        } else {
+            return redirect('/');
+        }
+    }
     public function login()
     {
         return view('login');
@@ -65,6 +80,12 @@ class AuthController extends Controller
     {
         return view('chatbot/pengaduan');
     }
+    public function hakakses()
+    {
+        return view('hak akses/hakakses');
+    }
+
+
     /**
      * Show the form for creating a new resource.
      *

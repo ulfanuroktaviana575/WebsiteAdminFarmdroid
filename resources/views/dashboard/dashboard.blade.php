@@ -20,6 +20,19 @@
                     <h3>Selamat Datang Admin FARMDROID</h3>
                 </div>
             </div>
+            <!-- <div class="row">
+                <div class="col-md">
+                    <br>
+                    <br>
+                    <h4>List Link APK :</h4>
+
+                    <p>1. Link Aplikasi Utama : <a href="https://drive.google.com/file/d/1jO7BPUIJmkyrb-dLV6GDtp_zzc_mxPWb/view?usp=sharing">Download</a></p>
+                    <p>2. Link Chatbot : <a href="https://drive.google.com/file/d/1kyUadyHWwutqX7gQp8CeTULxRezmu2_E/view?usp=sharing">Download</a></p>
+                    <br>
+                    <p>Note : <br>1. Chatbot berada dalam file yang berbeda karena dalam proses pengembangan
+                        <br>2. Website dalam waktu pengembangan 50% (untuk CRUD masih proses pengerjaan)<br> <br></p>
+                </div>
+            </div> -->
 
             <!-- 3 panel informasi -->
             <div class="row justify-content-center">

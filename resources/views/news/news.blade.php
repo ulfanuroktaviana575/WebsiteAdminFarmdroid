@@ -233,16 +233,8 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="exampleFormControlTextarea1">Deskripsi Penyakit</label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="masukan Deskripsi penyakit"></textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleFormControlTextarea1">Penyebab Penyakit</label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="masukan penyebab penyakit"></textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleFormControlTextarea1">Penanganan Penyakit</label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Masukkan cara penanganan penyakit"></textarea>
+                                            <label for="exampleFormControlTextarea1">Deskripsi Berita</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="masukan Deskripsi berita"></textarea>
                                         </div>
                                     </form>
                                 </div>

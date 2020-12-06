@@ -50,7 +50,7 @@
                                 <div class="col-sm-4">
                                     <div class="description-block">
                                         <h5 class="description-header">Hak Akses</h5>
-                                        <span class="description-text">Admin</span>
+                                        <span class="description-text">Pakar</span>
                                     </div>
                                     <!-- /.description-block -->
                                 </div>
